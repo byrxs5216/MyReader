@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+    <!--android:background="?android:attr/itemBackground"-->
+
+    <ImageView
+        android:id="@+id/iv_news_img"
+        android:layout_width="85dp"
+        android:layout_height="65dp"
+        android:layout_margin="4dp"
+        android:scaleType="centerCrop"
+        android:transitionName="photos"
+        tools:src="@drawable/ic_header"/>
+
+    <TextView
+        android:id="@+id/tv_news_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_news_img"
+        android:layout_toRightOf="@+id/iv_news_img"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        tools:text="中石油:美国油价便宜因不含税"/>
+
+    <TextView
+        android:id="@+id/tv_news_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_news_img"
+        android:layout_alignLeft="@+id/tv_news_title"
+        android:layout_below="@+id/tv_news_title"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="3D打印机一直以来只能进行单向操作，任务一旦开始便无法反悔。不过最近一批研究生研发了一种新型打印机，让你在打印的同时，可以修改重塑之前的设计。让我们一起来看看这个神奇的设备究竟是怎样的吧。"
+        android:textColor="@color/nomalGray"
+        android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="12sp"
+            tools:text="2016-02-19 08:09:19"
+            android:layout_alignBottom="@+id/iv_news_img" />
+
+
+</RelativeLayout>

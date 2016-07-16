@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single"
+        >
+
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_navi_news"
+            android:title="新闻资讯" />
+
+        <item
+            android:id="@+id/nav_joke"
+            android:icon="@drawable/ic_navi_amuse"
+            android:title="笑话大全" />
+
+        <item
+            android:id="@+id/nav_beauty"
+            android:icon="@drawable/ic_navi_stories"
+            android:title="花瓣福利" />
+        <!--<item-->
+            <!--android:id="@+id/nav_music"-->
+            <!--android:icon="@drawable/ic_navi_tour"-->
+            <!--android:title="QQ音乐" />-->
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="设置" />
+            <!--<item-->
+                <!--android:id="@+id/nav_night"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="夜间模式" />-->
+        </menu>
+    </item>
+
+</menu>
